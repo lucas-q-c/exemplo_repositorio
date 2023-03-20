@@ -1,6 +1,7 @@
 
 public class Produto {
 	
+	private String id;
 	private String nome;
 	private String fabricante;
 	private double preco;
@@ -9,5 +10,10 @@ public class Produto {
 		this.nome = nome;
 		this.fabricante = fabricante;
 		this.preco = preco;
+		this.id = nome + fabricante;
+	}
+	
+	public String getId() {
+		return this.id;
 	}
 }
